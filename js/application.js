@@ -72,7 +72,7 @@ function doMovementPattern(moveType) {
   if (typeof(mover) != 'undefined') {
     clearInterval(mover);
   }
-  mover = setInterval(moveType, 50);
+  mover = setInterval(moveType, 0);
 }
 
 function stopMovement() {
@@ -228,7 +228,7 @@ function normalWin(merged) {
 function normal() {
   changeRule(normalAdd, 
     function(a, b) { return a === b; }, 
-    function(merged) { return merged === 2147483648; });
+    function(merged) { return merged === 1267650600228229401496703205376; });
 }
 
 function alwaysTwo() {
